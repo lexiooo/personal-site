@@ -1,0 +1,101 @@
+body {
+	background-color: #6a002c;
+	background-image: url("https://lexio.nekoweb.org/assets/firefoxbg.png");
+	background-attachment: fixed;
+    
+}
+.container {
+	padding: 10px;
+	backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.5);
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 20px;
+    max-width: 600px;
+    min-width: 292px;
+    color: rgba(255,255,255,0.8);
+     display: flex;
+      position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container > div {
+  padding: 5px;
+}
+h1::before {
+	content: "# ";
+    color: rgba(255,255,255,0.5);
+}
+h2::before {
+	content: "## ";
+    color: rgba(255,255,255,0.5);
+}
+h3::before {
+	content: "### ";
+    color: rgba(255,255,255,0.5);
+}
+h4::before {
+	content: "#### ";
+    color: rgba(255,255,255,0.5);
+}
+h5::before {
+	content: "##### ";
+    color: rgba(255,255,255,0.5);
+}
+h6::before {
+	content: "###### ";
+    color: rgba(255,255,255,0.5);
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+.social {
+	transition: 0.2s;
+    filter: contrast(0%) brightness(2);
+    opacity: 80%;
+}
+.social:hover {
+	transform: scale(1.1);
+    transition: 0.2s;
+    filter: contrast(1) brightness(1);
+    opacity: 100%;
+}
+.social:active {
+	transform: scale(0.9);
+    filter: contrast(1) brightness(1);
+    opacity: 100%;
+}
+.pfp {
+	border-radius: 100%;
+    border: 2px solid rgba(0,0,0,0.5);
+    width: 150px;
+    height: 150px;
+}
+@media screen and (max-width: 600px) {
+	.waow {
+    	display: none;
+	}
+}
+@media screen and (max-width: 600px) {
+	.elements {
+    	text-align: center;
+	}
+}
+input[type="text"] {
+	padding: 10px;
+    background: rgba(0,0,0,0.5);
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: rgba(255,255,255,0.8);
+}
+input[type="text"]:focus {
+	outline: 2px solid white;
+}
+input[type="submit"] {
+	padding: 10px;
+    background: rgba(0,0,0,0.5);
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: rgba(255,255,255,0.8);
+}
