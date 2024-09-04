@@ -57,21 +57,15 @@ the excuse of a state which is pennsylvania :3</p>
 </svg>
 </a><h3>notify me!</h3>
 <p>this goes directly to my phone, i may answer on my mastodon!</p>
-<input type="text" placeholder="what you want to send !!" required="" name="message" id="awe">
-<input type="submit" value="send!" onclick="hi()"><br>
-<small>only click once, don't spam
+<form method="post" action="https://ntfy.lexio.buzz">
+<input type="text" placeholder="your name !!" required="" name="urname">
+<input type="text" placeholder="what you want to send !!" required="" name="message">
+<input type="submit" value="send!"><br>
+</form>
+<small style='color: rgba(0,0,0,0);'>hi :3
 </small>
 </div>
 </div>
-<script>
-function hi() {
-	var nameValue = document.getElementById("awe").value;
-	fetch('https://ntfy.sh/lexionotifs', {
-  	  method: 'POST', // PUT works too
-  	  body: nameValue
-	});
-}
-</script>
 
 
 </body></html>
