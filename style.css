@@ -1,7 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/br-sonoma');
 body {
 	background-color: #6a002c;
 	background-image: url("/assets/website-bg.png");
 	background-attachment: fixed;
+	font-family: "BR Sonoma", sans-serif;
 }
 .container {
 	padding: 10px;
